@@ -27,7 +27,6 @@ export const Profile = ({
             <span class="quantity">{followers}</span>
           </li>
           <li>
-            {' '}
             <span class="label">Views</span>
             <span class="quantity">{views}</span>
           </li>
