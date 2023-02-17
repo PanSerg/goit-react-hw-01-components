@@ -1,5 +1,5 @@
 
-export const Profile = ({
+const Profile = ({
     items: {
         avatar,
         username,
@@ -40,3 +40,5 @@ export const Profile = ({
 };
 
 Profile.propTypes = {}
+
+export default Profile; 
