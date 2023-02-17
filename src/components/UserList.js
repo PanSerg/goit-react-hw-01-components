@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 
 const Profile = ({
     items: {
@@ -39,6 +40,11 @@ const Profile = ({
     );
 };
 
-Profile.propTypes = {}
+Profile.propTypes = {
+    items: PropTypes.string.isRequired, 
+    username: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired
+};
 
 export default Profile; 
