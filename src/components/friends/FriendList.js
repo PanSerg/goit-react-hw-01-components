@@ -4,13 +4,11 @@ import FriendListItem from './friendListItem';
 
 const FriendList = ({ items }) => {
     return (
-        <div>
-            <FriendList>
+        <ul>
                 {items.map(friend => (
                     <FriendListItem items={friend} key={friend.id} />
                 ))}
-            </FriendList>
-        </div>
+        </ul>
     );
 };
 
