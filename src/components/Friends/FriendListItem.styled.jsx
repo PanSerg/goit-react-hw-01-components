@@ -1,0 +1,20 @@
+import styled from "@emotion/styled";
+
+export const Active = styled.p`
+    color: red;
+    text-align: center;
+    margin-left: 15px;
+    width: 10px;
+    height: 10px;
+
+    background-color: ${({ variant }) => {
+        switch (variant) {
+            case "Online":
+                return "green";
+            case "offline":
+                return "grey";
+            default:
+                return "orange";
+        }
+    }};
+`;

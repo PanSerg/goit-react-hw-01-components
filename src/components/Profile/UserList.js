@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import {ImgStyle, ListStat, NameStyle, Stats, ProfileCard } from './UserList.Styled';
 
 const Profile = ({
     items: {
@@ -14,29 +15,29 @@ const Profile = ({
     }
 }) => {
     return (
-      <div>
-        <div>
+      <ProfileCard>
+        <ImgStyle>
           <img src={avatar} alt="User avatar" />
-          <p>{username}</p>
+          <NameStyle>{username}</NameStyle>
           <p>{tag}</p>
           <p>{location}</p>
-        </div>
+        </ImgStyle>
 
-        <ul>
-          <li>
-            <span className="label">Followers: </span>
-            <span className="quantity">{followers}</span>
-          </li>
-          <li>
-            <span className="label">Views: </span>
-            <span className="quantity">{views}</span>
-          </li>
-          <li>
-            <span className="label">Likes: </span>
-            <span className="quantity">{likes}</span>
-          </li>
-        </ul>
-      </div>
+          <ListStat>
+            <li>
+              <span className="label">Followers: </span>
+              <Stats>{followers}</Stats>
+            </li>
+            <li>
+              <span className="label">Views: </span>
+              <Stats>{views}</Stats>
+            </li>
+            <li>
+              <span className="label">Likes: </span>
+              <Stats>{likes}</Stats>
+            </li>
+          </ListStat>
+      </ProfileCard>
     );
 };
 
