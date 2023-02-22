@@ -4,10 +4,9 @@ import { Active } from './FriendListItem.styled';
 const FriendListItem = ({ items: { avatar, name, isOnline } }) => {
     return (
       <li>
-        <span className="status">
-          <img className="avatar" src={avatar} alt={name} width="48" />
-          <Active status={isOnline ? 'Online' : 'offline'}>0</Active>
-        </span>
+        <span>{name}</span>
+        <img src={avatar} alt={name} width="48" />
+        <Active status={isOnline ? 'Online' : 'offline'}>{Active.status}</Active>
       </li>
     );
 };

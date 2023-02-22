@@ -1,7 +1,6 @@
 import styled from "@emotion/styled";
 
 export const Transactions = styled.table`
-    display: flex;
     align-items: centre;
     flax-direction: column;
     margin-top: 50px;
