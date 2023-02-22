@@ -1,3 +1,4 @@
+import { getRandomHexColor } from 'components/randomColor';
 import PropTypes from 'prop-types';
 import { StatisticsStyle } from "./Statistics.styled";
 
@@ -7,7 +8,7 @@ const Statistics = ({ items, title }) => {
       {title && (<h2>Upload status</h2>)}
       <ul>
         {items.map(data => (
-          <li key={data.id}>
+          <li key={data.id} style={{backgroundColor: getRandomHexColor()}}>
             <span>{data.label}: </span>
             <span>{data.percentage}%</span>
           </li>
