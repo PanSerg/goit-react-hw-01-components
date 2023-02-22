@@ -12,7 +12,7 @@ export const Active = styled.p`
             case "Online":
                 return "green";
             case "offline":
-                return "grey";
+                return "red";
             default:
                 return "orange";
         }
