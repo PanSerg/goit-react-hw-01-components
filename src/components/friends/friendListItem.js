@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
 import { Active } from './FriendListItem.styled';
 
-const FriendListItem = ({ items: { avatar, name, Active } }) => {
+const FriendListItem = ({ items: { avatar, name, isOnline } }) => {
     return (
       <li>
         <span className="status">
           <img className="avatar" src={avatar} alt={name} width="48" />
-          <span status={Active ? 'Online' : 'offline'}>0</span>
+          <span status={isOnline ? 'Online' : 'offline'}>0</span>
         </span>
       </li>
     );
@@ -14,7 +14,7 @@ const FriendListItem = ({ items: { avatar, name, Active } }) => {
 
 FriendListItem.propTypes = {
     items: PropTypes.shape({
-        Active: PropTypes.bool.isRequired,
+        isOnline: PropTypes.bool.isRequired,
         avatar: PropTypes.string.isRequired,
         name: PropTypes.string.isRequired,
     })
