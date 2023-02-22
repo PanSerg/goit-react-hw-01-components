@@ -7,8 +7,8 @@ export const Active = styled.p`
     width: 10px;
     height: 10px;
 
-    background-color: ${({ variant }) => {
-        switch (variant) {
+    background-color: ${({ status }) => {
+        switch (status) {
             case "Online":
                 return "green";
             case "offline":

@@ -18,7 +18,7 @@ ul {
         flex-direction: column;
         justify-content: center;
         align-items: centre;
-        width: 70px;
+        width: 80px;
         height: 70px;
     }
 }

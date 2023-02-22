@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 export const ProfileCard = styled.div`
   display: flex;
   flex-direction: column;
-  width: 450px;
+  width: 500px;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   img {
@@ -35,7 +35,7 @@ export const ListStat = styled.ul`
   padding: 10px;
   margin: 0;
   list-style: none;
-  background-color: #3f61bf;
+  background-color: #63BF3F;
   border: 1px solid black;
   li {
     display: flex;
