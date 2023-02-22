@@ -5,7 +5,7 @@ export const Active = styled.p`
     text-align: center;
     margin-left: 15px;
     width: 10px;
-    height: 10px;
+    height: 0;
 
     background-color: ${({ status }) => {
         switch (status) {
@@ -14,7 +14,7 @@ export const Active = styled.p`
             case "offline":
                 return "red";
             default:
-                return "orange";
+                return "grey";
         }
     }};
 `;
