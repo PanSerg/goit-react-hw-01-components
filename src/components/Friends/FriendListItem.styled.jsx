@@ -5,7 +5,8 @@ export const Active = styled.p`
     text-align: center;
     margin-left: 15px;
     width: 10px;
-    height: 0;
+    height: 10px;
+    border-radius: 50%;
 
     background-color: ${({ status }) => {
         return status ? "green" : "red" }};
