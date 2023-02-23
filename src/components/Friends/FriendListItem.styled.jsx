@@ -8,13 +8,5 @@ export const Active = styled.p`
     height: 0;
 
     background-color: ${({ status }) => {
-        switch (status) {
-            case "Online":
-                return "green";
-            case "offline":
-                return "red";
-            default:
-                return "grey";
-        }
-    }};
+        return status ? "green" : "red" }};
 `;
